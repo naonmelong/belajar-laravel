@@ -12,6 +12,9 @@ class PostsTableSeeder extends Seeder
      */
     public function run()
     {
-        //
+        $this->call(PostsTableSeeder::class);
+        
+        // masukkan data ke database
+DB::table('posts')->insert($posts);
     }
 }

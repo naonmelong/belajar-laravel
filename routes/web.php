@@ -100,33 +100,33 @@
 //         }
 // });
 
-Route::get('/testmodel', function() {
-    $query =App\post::all();
+Route::get('/tes', function() {
+    $query =App\karyawan::all();
     return $query;
     });
-    Route::get('/testmodell', function() {
-        $query =App\post::find(1);
-        return $query;
-        });
-        Route::get('/testmodelll', function() {
-            $query =App\post::where('title','like','%cepat nikah%')->get();
-            return $query;
-            });
-            Route::get('/testmodellll', function() {
-                $query =$post = App\post::find(1);
-                $post->title = "Ciri Keluarga Sakinah";
-                $post->save();
-                return $post;
-                });
-                Route::get('/testmodelllll', function() {
-                    $post = App\post::find(1);
-                    $post->delete();
-                    return $post;
-                    });
-                    Route::get('/testmodellllll', function() {
-                        $post = new App\post;
-                        $post->title = "7 Amalan Pembuka Jodoh";
-                        $post->content = "shalat malam, sedekah, puasa sunah, silaturahmi, senyum, doa, tobat";
-                        $post->save();
-                        return $post;
-                        });
+    // Route::get('/testmodell', function() {
+    //     $query =App\post::find(1);
+    //     return $query;
+    //     });
+    //     Route::get('/testmodelll', function() {
+    //         $query =App\post::where('title','like','%cepat nikah%')->get();
+    //         return $query;
+    //         });
+    //         Route::get('/testmodellll', function() {
+    //             $query =$post = App\post::find(1);
+    //             $post->title = "Ciri Keluarga Sakinah";
+    //             $post->save();
+    //             return $post;
+    //             });
+    //             Route::get('/testmodelllll', function() {
+    //                 $post = App\post::find(1);
+    //                 $post->delete();
+    //                 return $post;
+    //                 });
+    //                 Route::get('/testmodellllll', function() {
+    //                     $post = new App\post;
+    //                     $post->title = "7 Amalan Pembuka Jodoh";
+    //                     $post->content = "shalat malam, sedekah, puasa sunah, silaturahmi, senyum, doa, tobat";
+    //                     $post->save();
+    //                     return $post;
+    //                     });

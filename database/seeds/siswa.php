@@ -11,7 +11,7 @@ class siswa extends Seeder
      */
     public function run()
     {
-        $this->call(siswaSeeder::class);
+        $this->call(siswaSeder::class);
         
         // masukkan data ke database
 DB::table('siswa')->insert($siswa);

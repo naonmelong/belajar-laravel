@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 
-class siswaa extends Seeder
+class siswaSeeder extends Seeder
 {
 
     /**
@@ -19,9 +19,9 @@ class siswaa extends Seeder
             ['nis'=>'44444', 'nama'=>'Sopo','jenis_kelamin'=>'Laki Laki', 'alamat'=>'kp.Sekeandur     ','tgl_lahir'=>'2000-07-09', 'umur'=>'19thn'],
             ['nis'=>'55555', 'nama'=>'Jarwo','jenis_kelamin'=>'Laki Laki', 'alamat'=>'kp.Palasari     ','tgl_lahir'=>'2004-07-09', 'umur'=>'15thn']
         ];
-        $this->call(siswaa::class);
+       
         
         // masukkan data ke database
-DB::table('siswaa')->insert($siswa);
+DB::table('siswa')->insert($siswa);
     }
 }
