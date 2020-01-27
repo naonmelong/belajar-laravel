@@ -13,6 +13,9 @@ class DatabaseSeeder extends Seeder
     {
 
 
-        $this->call(karyawanSeeder::class);
+       
+        $this->call(PostsTableseeder::class);
+        factory (App/Tabungan::class , 100)->create();
+        factory (App/Costumer::class , 100)->create();
     }
 }
