@@ -100,10 +100,7 @@
 //         }
 // });
 
-Route::get('/tes', function() {
-    $query =App\karyawan::all();
-    return $query;
-    });
+
     // Route::get('/testmodell', function() {
     //     $query =App\post::find(1);
     //     return $query;
@@ -130,3 +127,11 @@ Route::get('/tes', function() {
     //                     $post->save();
     //                     return $post;
     //                     });
+
+    Route::get('/', function() {
+        return view("welcome");
+        });
+    
+    
+        Route::get('/tambah/{a?}/{b?}', 'LatihanController@hallo');
+        Route::get('/data1', 'LatihanController@loop');
