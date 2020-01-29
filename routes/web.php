@@ -134,4 +134,9 @@
     
     
         Route::get('/tambah/{a?}/{b?}', 'LatihanController@hallo');
+
         Route::get('/data1', 'LatihanController@loop');
+        Route::get('/data1', 'LatihanController@hm');
+        Route::get('/tabung', 'TabunganController@index');
+        Route::get('/tabung2', 'TabunganController@show');
+        Route::get('/tambah/{id}/{nis}/{nama}/{kelas}/{jumlah}', 'TabunganController@store');

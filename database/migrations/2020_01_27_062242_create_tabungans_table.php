@@ -18,7 +18,7 @@ class CreateTabungansTable extends Migration
             $table->string('nis')->unique();
             $table->string('nama');
             $table->string('kelas');
-            $table->integer('jml');
+            $table->integer('jumlah');
             $table->timestamps();
         });
     }
