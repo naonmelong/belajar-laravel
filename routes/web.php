@@ -140,3 +140,7 @@
         Route::get('/tabung', 'TabunganController@index');
         Route::get('/tabung2', 'TabunganController@show');
         Route::get('/tambah/{id}/{nis}/{nama}/{kelas}/{jumlah}', 'TabunganController@store');
+
+
+ Route::get('/pass', 'PraktisController@pass');
+
