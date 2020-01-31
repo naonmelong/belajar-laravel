@@ -8,8 +8,8 @@ class PraktisController extends Controller
 {
     public function pass()
     {
-        $data = "Sara Azzahra";
-        return view('latihan', compact ('$data'));
+        $tabungan = "Tabungan";
+        return view('latihan', compact ('$tabungan'));
     }
     public function pass1()
     {

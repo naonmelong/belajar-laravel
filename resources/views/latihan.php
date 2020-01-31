@@ -5,7 +5,7 @@
 </head>
 <body>
 
-Hallo Nama Saya <?php echo $data; ?>
+Hallo Nama Saya <?php echo $data ?>
 
 </body>
 </html> 

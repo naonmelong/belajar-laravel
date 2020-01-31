@@ -142,5 +142,5 @@
         Route::get('/tambah/{id}/{nis}/{nama}/{kelas}/{jumlah}', 'TabunganController@store');
 
 
- Route::get('/pass', 'PraktisController@pass');
+ Route::get('/passtabungan/(id)', 'PraktisController@pass');
 
